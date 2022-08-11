@@ -1,0 +1,37 @@
+get http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "admin90210"
+}
+
+###
+
+GET http://localhost:3000/api/auth/verify
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwibG9naW4iOnRydWUsImlhdCI6MTY1OTYxODg0NywiZXhwIjoxNjU5NjE5MTQ3fQ.Zy0As--ARPF71SriaBVDa2VwgLLErqdu97xLhcsxZ7A
+
+###
+
+post http://localhost:3000/api/auth/logout
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwibG9naW4iOnRydWUsImlhdCI6MTY1OTYxODg0NywiZXhwIjoxNjU5NjE5MTQ3fQ.Zy0As--ARPF71SriaBVDa2VwgLLErqdu97xLhcsxZ7A"
+}
+
+###
+
+GET http://localhost:3000/api/portitem/4
+
+###
+
+post http://localhost:3000/api/mailer
+Content-Type: application/json
+
+{
+    "name": "Rob",
+    "e-mail": "email@email.com",
+    "message": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoxLCJ1c2VybmFtZSI6ImFkbWluIiwibG9naW4iOnRydWUsImlhdCI6MTY1NTU1NzA3NywiZXhwIjoxNjU2MTYxODc3fQ.0qI5_Wy_iuQ4lqT5uGp19ZZZVDwrKjF8jffcE1Zfo0A"
+    
+}
